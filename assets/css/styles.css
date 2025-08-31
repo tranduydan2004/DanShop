@@ -1,0 +1,155 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header Styles */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding: 1rem 0.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    width: 100%;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1a4ed8;
+    margin-right: 2rem;
+}
+
+header .logo a {
+    color: #1a4ed8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav {
+    flex: 1;
+}
+
+nav ul.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul.menu li {
+    position: relative;
+}
+
+nav ul.menu li a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+}
+
+nav ul.menu li a:hover {
+    color: #1a4ed8;
+    background: #f0f4ff;
+}
+
+/* CONTENT */
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.products-list {
+    padding: 1.25rem;
+}
+
+.products {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.product-card {
+    border: 0.063rem solid #ddd;
+    padding: 0.625rem;
+    text-align: center;
+}
+
+.product-card img {
+    width: 40%;
+    height: auto;
+}
+
+/* FOOTER */
+footer {
+    background: #333;
+    color: white;
+    padding: 0.938rem;
+    text-align: left;
+}
+
+/* Dropdown */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 1.25rem;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    padding: 0.625rem;
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    border-radius: 6px;
+    min-width: 180px;
+    list-style: none;
+    padding: 0.5rem 0;
+    margin: 0;
+    z-index: 1001;
+}
+
+.submenu li a {
+    padding: 0.5rem 1.25rem;
+    white-space: nowrap;
+    display: block;
+    color: #222;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+
+.submenu li a:hover {
+    background: #f0f4ff;
+    color: #1a4ed8;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
